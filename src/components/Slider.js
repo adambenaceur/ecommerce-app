@@ -36,9 +36,15 @@ function Slider() {
           <div className="max-w-2xl mx-auto grid grid-cols-3 gap-4">
             <div className="col-span-1 flex justify-end">
               <Button
-                variant="contained"
-                color="primary"
+                variant="outlined"
+                color="inherit"
                 className="flex items-center justify-center w-12 h-12 rounded-full"
+                style={{
+                  width: "48px",
+                  height: "48px",
+                  borderRadius: "100%",
+                  boxShadow: "none"
+                }}
                 onClick={prevSlide}
               >
                 <ArrowBack />
@@ -56,9 +62,15 @@ function Slider() {
             </div>
             <div className="col-span-1 flex justify-start">
               <Button
-                variant="contained"
-                color="primary"
+                variant="outlined"
+                color="inherit"
                 className="flex items-center justify-center w-12 h-12 rounded-full"
+                style={{
+                  width: "48px",
+                  height: "48px",
+                  borderRadius: "100%",
+                  boxShadow: "none"
+                }}
                 onClick={nextSlide}
               >
                 <ArrowForward />
