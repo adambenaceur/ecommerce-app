@@ -9,27 +9,15 @@ function Slider() {
   const slides = [
     {
       image: 'https://example.com/recent1.jpg',
-      title: 'Recent Collection 1',
+      title: 'Collection 1',
     },
     {
       image: 'https://example.com/recent2.jpg',
-      title: 'Recent Collection 2',
+      title: 'Collection 2',
     },
     {
       image: 'https://example.com/recent3.jpg',
-      title: 'Recent Collection 3',
-    },
-    {
-      image: 'https://example.com/prized1.jpg',
-      title: 'Most Prized Collection 1',
-    },
-    {
-      image: 'https://example.com/prized2.jpg',
-      title: 'Most Prized Collection 2',
-    },
-    {
-      image: 'https://example.com/prized3.jpg',
-      title: 'Most Prized Collection 3',
+      title: 'Collection 3',
     },
   ];
 
@@ -63,11 +51,7 @@ function Slider() {
                   src={slides[currentSlide].image}
                   alt={slides[currentSlide].title}
                 />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <Typography variant="h4" component="h1" color="white">
-                    {slides[currentSlide].title}
-                  </Typography>
-                </div>
+                
               </div>
             </div>
             <div className="col-span-1 flex justify-start">
